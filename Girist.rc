@@ -1,0 +1,422 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Girist.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Girist.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Girist.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BUILD_DLG DIALOGEX 0, 0, 316, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Build Iris Library"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,246,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,186,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,12,30,282,14
+    LTEXT           "Build Infomation:",IDC_ST_LIBPATH,12,54,282,8
+    LISTBOX         IDC_LIST2,12,66,282,108,LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "Performance",IDC_BT_DISTRI,12,186,56,14
+    PUSHBUTTON      "ReBuild",IDC_BT_SWITCH,12,6,50,14
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | NOT WS_VISIBLE | WS_TABSTOP,192,6,100,15
+END
+
+IDD_DISTRI_DLG DIALOGEX 0, 0, 358, 303
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Performance: ROC Curve & Hamming Distance Distributions"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,270,282,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,24,282,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,18,48,270,14
+    CONTROL         "Custom1",IDC_CUSTOM_DISTRI,"G_BOARD_CTRL",WS_TABSTOP,18,84,156,126
+    PUSHBUTTON      "Re Coding",IDC_BT_DISTRI,294,48,56,14
+    GROUPBOX        "Iris Feature Parameters",IDC_GROUP_BUILD,12,0,330,66
+    GROUPBOX        "Distribution and ROC",IDC_GROUP_DISTRIBUTION,12,72,342,144
+    EDITTEXT        IDC_EDIT_SEP,192,30,60,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "decision threshold",IDC_ST_SEP,18,30,168,8
+    EDITTEXT        IDC_ED_DCRIMI,12,216,342,60,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Rotation Compensation",IDC_ST_LIBPATH,18,12,83,8
+    EDITTEXT        IDC_ED_SHIFT,96,12,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    LTEXT           "Filter WaveLen",IDC_STATIC,150,12,48,12
+    EDITTEXT        IDC_ED_WAVELEN,204,12,40,14,ES_AUTOHSCROLL
+    CONTROL         "Custom2",IDC_CUSTOM_ROC,"G_BOARD_CTRL",WS_TABSTOP,180,84,174,126
+    COMBOBOX        IDC_CB_LEVEL,300,12,42,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coding Level",IDC_STATIC,252,12,42,8
+END
+
+IDD_PROGRESS_DLG DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,234,168,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,30,168,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,12,30,282,14
+    LTEXT           "Static",IDC_STATIC,12,12,150,8
+    LISTBOX         IDC_LIST2,12,54,282,102,LBS_SORT | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_BUILD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DISTRI_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_PROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GRUSOFT             BITMAP                  "res\\grus_logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Girist.ico"
+IDI_ICON1               ICON                    "res\\Girist_1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Girist..."
+    IDS_LIB_OVERWRITE       " will be overwritten. Do you want to continue?"
+    IDS_APP_NAME            "Girist 1.0"
+    IDS_LIB_CHANGEPATH      "The path will be changed to "
+    IDS_SVAE_CHANGE         "Do you want to save changes to \r\n"
+    IDS_SVAE_UNTITLED       "Do you want to save changes to Untitled?"
+    IDS_SVAE_SUCCEED        "save successfully to "
+    IDS_BUILD_CANCEL        "\r\nThe build has been canceled at the user's request"
+    IDS_THREAD_CREATE_FAIL  "CreateThread Failed "
+    IDS_GIRIST_RESTART      "Please exit and restart GIRIST. If this problem persists, please contact girist@grusoft.com."
+    IDS_LIB_LOAD_ERR        "Failed to load "
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_TIME       "HH:MM"
+    ID_INDICATOR_CORE       "              "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAIL_INIT_CONTROL   "Failed to Init Control Parameters"
+    IDS_IRIS_AUTHEN_OK      "IRIS_AUTHEN_OK\n\nThe hamming distance of ""%s"" and ""%s"" is %4.3g,They are from one eye.\n"
+    IDS_IRIS_AUTHEN_FAIL    "IRIS_AUTHEN_FAIL\n\nThe hamming distance of ""%s"" and ""%s"" is %4.3g,They are from two eyes.\n"
+    IDS_IRIS_AUTHEN_THRESH  "The result is based on the threshold 0.36; which is from the  experimental results of UBRIS,CASIA and MMU."
+    IDS_IRIS_IDENTIFY_OK    "IRIS_IDENTIFY_OK\n\nThe closest iris is ""%s"".\nThe hamming distance of ""%s"" and ""%s"" is %4.3g,which is less than the threshold %4.3g\n"
+    IDS_IRIS_IDENTIFY_FAIL  "IRIS_IDENTIFY_FAIL\n\nThe closest iris is ""%s"".\nThe hamming distance of ""%s"" and ""%s"" is %4.3g,which is larger than the threshold %4.3g\n"
+    IDS_LIB_NOOK            "The lib has no USABLE iris. Please rebuild the lib or creat new lib.\n For more info about USABLE, please see girist user guide."
+    IDS_LOCATION_FAIL       "Failed to locate the iris of ""%s"""
+    IDS_IRIS_DISTANCE_2     "The hamming distance of ""%s"" and ""%s"" is %4.3g.\nThe result is based on the threshold %4.3g\n.\n"
+    IDS_IRIS_DISTANCE_2_FAIL "Failed to Compare. ERR code=%d"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TAB_IRIS DIALOGEX 0, 0, 302, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Custom1",IDC_CUSTOM_NORMAL,"G_BOARD_CTRL",WS_TABSTOP,0,102,258,24
+    CONTROL         "Custom1",IDC_CUSTOM_EYE,"G_BOARD_CTRL",WS_TABSTOP,0,0,150,96
+    EDITTEXT        IDC_EDIT1,156,77,132,19,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Static",IDC_ST_INFO,156,24,132,66
+    PUSHBUTTON      "Button1",IDC_BUTTON1,162,0,50,14
+    PUSHBUTTON      "Button2",IDC_BUTTON2,227,0,50,14
+END
+
+IDD_TAB_TREE DIALOGEX 0, 0, 187, 274
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,0,0,180,270,WS_EX_LEFTSCROLLBAR
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 184, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Girist"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Girist Version 1.0 beta",IDC_BMP_LOG,12,6,96,8,SS_NOPREFIX
+    LTEXT           "GruSoft (C) 2009 ",IDC_STATIC,12,24,90,8
+    DEFPUSHBUTTON   "OK",IDOK,120,6,50,16,WS_GROUP
+    CONTROL         141,IDC_BMP_LOGO,"Static",SS_BITMAP | SS_NOTIFY,84,84,80,33
+    ICON            IDR_MAINFRAME,IDI_GIRIST,18,84,20,20,SS_REALSIZEIMAGE
+    LTEXT           "mail: girist@grusoft.com\nMSN: gsp.cys@gmail.com\nQQ: 304718494",IDC_STATIC,15,44,87,28
+END
+
+IDD_GIRIST_DIALOG DIALOGEX 0, 0, 450, 278
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Grus Iris Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_PROJ,"SysTabControl32",0x0,0,0,138,276
+    CONTROL         "",IDC_TAB_SOURCE,"SysTabControl32",0x0,138,0,306,132
+    CONTROL         "",IDC_TAB_TARGET,"SysTabControl32",0x0,138,144,306,132
+END
+
+IDD_COMMENT DIALOGEX 0, 0, 281, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,126,50,14
+    PUSHBUTTON      "Cancel",2,203,124,50,14
+    EDITTEXT        IDC_ED_COMMENT,24,6,228,102,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TAB_IRIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_TAB_TREE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "res\\toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_IRIS_AUTHEN
+    SEPARATOR
+    BUTTON      ID_IRIS_IDENTIFY
+    SEPARATOR
+    BUTTON      ID_LIB_OPEN
+    BUTTON      ID_LIB_CLOSE
+    BUTTON      ID_LIB_CREATE
+    BUTTON      ID_LIB_SAVE
+    SEPARATOR
+    BUTTON      ID_LIB_INFO
+    SEPARATOR
+    BUTTON      ID_LIB_BUILD
+    BUTTON      ID_LIB_DISTRI
+    SEPARATOR
+    BUTTON      ID_TOOL_HELP
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_OVR        "Compare Two Iris"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IRIS_AUTHEN          "one-one matching\n1:1"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Girist.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

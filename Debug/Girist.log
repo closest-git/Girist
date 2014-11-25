@@ -1,0 +1,108 @@
+﻿生成启动时间为 2014/11/25 15:28:42。
+     1>项目“G:\Girist\Girist.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\Girist.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Girist.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Girist.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt BoardControl.cpp CommentDlg.cpp Dlgbars.cpp Girist.cpp GiristDlg.cpp GTreeCtrl.cpp TabCtrlSSL.cpp TabIris.cpp TabPageSSL.cpp TabTree.cpp
+         TabTree.cpp
+     1>g:\girist\pch\gip_def.h(283): warning C4005: “ASSERT”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(333) : 参见“ASSERT”的前一个定义
+         TabPageSSL.cpp
+         TabIris.cpp
+     1>g:\girist\pch\gip_def.h(283): warning C4005: “ASSERT”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(333) : 参见“ASSERT”的前一个定义
+     1>g:\girist\tabiris.cpp(63): error C2065: “GIRIS_MODE_DEFAULT”: 未声明的标识符
+     1>g:\girist\tabiris.cpp(81): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\tabiris.cpp(154): error C2065: “GIRIS_MODE_DEFAULT”: 未声明的标识符
+     1>g:\girist\tabiris.cpp(155): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\tabiris.cpp(214): error C3861: “G_IRIS_distance_2”: 找不到标识符
+     1>g:\girist\tabiris.cpp(217): error C2065: “GIRIS_T_SEP”: 未声明的标识符
+         TabCtrlSSL.cpp
+         GTreeCtrl.cpp
+     1>g:\girist\pch\gip_def.h(283): warning C4005: “ASSERT”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(333) : 参见“ASSERT”的前一个定义
+     1>g:\girist\gtreectrl.cpp(340): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+         GiristDlg.cpp
+     1>g:\girist\pch\gip_def.h(283): warning C4005: “ASSERT”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(333) : 参见“ASSERT”的前一个定义
+     1>g:\girist\giristdlg.cpp(476): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(486): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(495): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(526): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(748): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(748): error C2051: case 表达式不是常量
+     1>g:\girist\giristdlg.cpp(750): error C2065: “GIRIS_MODE_IDENTIFY”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(750): error C2051: case 表达式不是常量
+     1>g:\girist\giristdlg.cpp(756): warning C4065: switch 语句包含“default”但是未包含“case”标签
+     1>g:\girist\giristdlg.cpp(982): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(1011): error C3861: “GIP_LIB_Append”: 找不到标识符
+     1>g:\girist\giristdlg.cpp(1020): error C2065: “GIRIS_MODE_AUTHEN”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(1042): error C2660: “GIP_LIB_discriminate”: 函数不接受 4 个参数
+     1>g:\girist\giristdlg.cpp(1056): error C2065: “GIRIS_T_SEP”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(1116): error C3861: “G_IRIS_identify”: 找不到标识符
+     1>g:\girist\giristdlg.cpp(1122): error C2065: “GIRIS_T_SEP”: 未声明的标识符
+     1>g:\girist\giristdlg.cpp(1126): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         Girist.cpp
+     1>g:\girist\pch\gip_def.h(283): warning C4005: “ASSERT”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(333) : 参见“ASSERT”的前一个定义
+     1>g:\girist\girist.cpp(69): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(815) : 参见“_wfopen”的声明
+     1>g:\girist\girist.cpp(271): warning C4996: 'vswprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\swprintf.inl(97) : 参见“vswprintf”的声明
+         Dlgbars.cpp
+         CommentDlg.cpp
+     1>g:\girist\pch\gip_def.h(283): warning C4005: “ASSERT”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(333) : 参见“ASSERT”的前一个定义
+         BoardControl.cpp
+     1>g:\girist\pch\gip_def.h(283): warning C4005: “ASSERT”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(333) : 参见“ASSERT”的前一个定义
+     1>g:\girist\boardcontrol.cpp(864): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(864): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(882): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(882): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(884): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(884): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(900): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(900): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(902): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(902): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(927): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(283) : 参见“wcscpy”的声明
+     1>g:\girist\boardcontrol.cpp(931): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(940): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(949): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(858): warning C4101: “val”: 未引用的局部变量
+     1>g:\girist\boardcontrol.cpp(988): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(988): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(995): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(995): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(996): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(997): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1006): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1013): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(283) : 参见“wcscpy”的声明
+     1>g:\girist\boardcontrol.cpp(1023): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1039): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1062): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1062): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1064): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1064): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1065): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1065): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1070): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1070): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1070): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(1070): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>g:\girist\boardcontrol.cpp(974): warning C4101: “inter_s”: 未引用的局部变量
+     1>g:\girist\boardcontrol.cpp(974): warning C4101: “intra_s”: 未引用的局部变量
+     1>g:\girist\boardcontrol.cpp(969): warning C4101: “val”: 未引用的局部变量
+     1>g:\girist\boardcontrol.cpp(974): warning C4101: “D_s”: 未引用的局部变量
+         正在生成代码...
+     1>已完成生成项目“G:\Girist\Girist.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.12

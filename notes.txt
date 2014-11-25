@@ -1,0 +1,20 @@
+TV_L1: morphological invariance and texture extraction by scale
+[ref] A comparison of three total variation based texture extraction models
+
+Texture is characterizedas repeated and meaningful structure of small patterns. Noise is characterized
+as uncorrelated random patterns
+We can interpret Meyer's result as follows. First, no matter how regular f is, u is always different to f as 
+long as f!=0. This is a major limitation of the ROF model, but it can be relaxed by applying
+the ROF model iteratively [17] or use the inverse TV flow [7]. Second, the texture/noise output v has its
+G-norm given by min{0.5*lenda?|f|*}. Therefore, the oscillating signal with G-norm less than 0.5*lenda
+ is removed by the ROF model. 
+
+the solution v of the TV-L1 model can be much smaller. In other words, the TV-L1 may not always remove some
+oscillating signal from f and erode the structure.
+[ref] Image Cartoon-Texture Decomposition and Feature. Selection using the Total Variation Regularized L-1 Functional
+
+Refinement equation(MFA Equation) is fundamental to multiresolution analysi.
+It states that the expansion fucntions of any subspace can be built from double-resolution copies of themselves-that is,from expasnion fuctions of the next higher resolution space.
+
+scaling vector 
+wavelet vector
