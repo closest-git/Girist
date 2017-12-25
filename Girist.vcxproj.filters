@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
+    <Filter Include="Source Files\girist">
+      <UniqueIdentifier>{589ab04b-c766-4b99-abec-72bf3e45e411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{e3704819-1dfa-4101-b8dd-7ee0c9a04c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\analysis">
+      <UniqueIdentifier>{316ce1c5-8608-4fa5-b8bc-b65d693ba1d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\d_ft_wt">
+      <UniqueIdentifier>{39b8c1fd-11ed-4794-89f3-bf9f5932d269}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BoardControl.cpp">
@@ -47,6 +59,51 @@
     </ClCompile>
     <ClCompile Include="TabTree.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Girist\giris_core.c">
+      <Filter>Source Files\girist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\Compact_DataStruc.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_fv.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_imag_property.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_imag_transform.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_library.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_package.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_util.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_thread.c">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBuild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDistri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\analysis\gia_basic.c">
+      <Filter>Source Files\analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\analysis\gia_handle.c">
+      <Filter>Source Files\analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\d_ft_wt\gip_dwt.c">
+      <Filter>Source Files\d_ft_wt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\d_ft_wt\gip_gabor.c">
+      <Filter>Source Files\d_ft_wt</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +143,54 @@
     <ClInclude Include="TabTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Girist\giris_core.h">
+      <Filter>Source Files\girist</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\2PassScale.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\Compact_DataStruc.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\Filters.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\gip_fv.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\gip_imag_property.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\gip_imag_transform.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\gip_library.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\gip_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\gip_thread.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDistri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\analysis\gia_basic.h">
+      <Filter>Source Files\analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\analysis\gia_handle.h">
+      <Filter>Source Files\analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\d_ft_wt\gip_dwt.h">
+      <Filter>Source Files\d_ft_wt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\d_ft_wt\gip_gabor.h">
+      <Filter>Source Files\d_ft_wt</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="j:\renstar\res\bmp00001.bmp">
@@ -106,13 +211,5 @@
     <ResourceCompile Include="Girist.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\Tools\OpenCV\lib\cv.lib" />
-    <Library Include="..\Tools\OpenCV\lib\cxcore.lib" />
-    <Library Include="..\Tools\OpenCV\lib\highgui.lib" />
-    <Library Include="H:\Program Files\Intel\MKL\8.0\ia32\lib\libguide.lib" />
-    <Library Include="H:\Program Files\Intel\MKL\8.0\ia32\lib\mkl_c.lib" />
-    <Library Include="H:\Program Files\Intel\MKL\8.0\ia32\lib\mkl_ia32.lib" />
   </ItemGroup>
 </Project>

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Girist", "Girist.vcxproj", "{1B877124-0B12-4E49-A44B-78D65F238491}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GIP_core", "..\GIPack\GIP_core\GIP_core.vcproj", "{40E24722-0188-4ADA-A30F-41FDFABCF6CE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,10 +13,6 @@ Global
 		{1B877124-0B12-4E49-A44B-78D65F238491}.Debug|Win32.Build.0 = Debug|Win32
 		{1B877124-0B12-4E49-A44B-78D65F238491}.Release|Win32.ActiveCfg = Release|Win32
 		{1B877124-0B12-4E49-A44B-78D65F238491}.Release|Win32.Build.0 = Release|Win32
-		{40E24722-0188-4ADA-A30F-41FDFABCF6CE}.Debug|Win32.ActiveCfg = Debug|Win32
-		{40E24722-0188-4ADA-A30F-41FDFABCF6CE}.Debug|Win32.Build.0 = Debug|Win32
-		{40E24722-0188-4ADA-A30F-41FDFABCF6CE}.Release|Win32.ActiveCfg = Release|Win32
-		{40E24722-0188-4ADA-A30F-41FDFABCF6CE}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

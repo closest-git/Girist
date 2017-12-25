@@ -67,7 +67,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src;.\OpenCV\cv\include;.\OpenCV\cxcore\include;.\OpenCV\otherlibs\highgui;.\mkl_10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -82,10 +82,11 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdiplus.lib;cv.lib;cxcore.lib;highgui.lib;libguide.lib;mkl_c.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>.\OpenCV\lib;.\mkl_10\ia32\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -101,6 +102,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\src;.\OpenCV\cv\include;.\OpenCV\cxcore\include;.\OpenCV\otherlibs\highgui;.\mkl_10\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -113,15 +115,71 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>gdiplus.lib;cv.lib;cxcore.lib;highgui.lib;libguide.lib;mkl_c.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\OpenCV\lib;.\mkl_10\ia32\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BoardControl.cpp" />
     <ClCompile Include="CommentDlg.cpp" />
     <ClCompile Include="Dlgbars.cpp" />
+    <ClCompile Include="DlgBuild.cpp" />
+    <ClCompile Include="DlgDistri.cpp" />
     <ClCompile Include="Girist.cpp" />
     <ClCompile Include="GiristDlg.cpp" />
     <ClCompile Include="GTreeCtrl.cpp" />
+    <ClCompile Include="src\analysis\gia_basic.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\analysis\gia_handle.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\d_ft_wt\gip_dwt.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\d_ft_wt\gip_gabor.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Girist\giris_core.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\Compact_DataStruc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_fv.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_imag_property.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_imag_transform.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_library.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_package.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_thread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\util\gip_util.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -135,10 +193,26 @@
     <ClInclude Include="BoardControl.h" />
     <ClInclude Include="CommentDlg.h" />
     <ClInclude Include="Dlgbars.h" />
+    <ClInclude Include="DlgBuild.h" />
+    <ClInclude Include="DlgDistri.h" />
     <ClInclude Include="Girist.h" />
     <ClInclude Include="GiristDlg.h" />
     <ClInclude Include="GTreeCtrl.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="src\analysis\gia_basic.h" />
+    <ClInclude Include="src\analysis\gia_handle.h" />
+    <ClInclude Include="src\d_ft_wt\gip_dwt.h" />
+    <ClInclude Include="src\d_ft_wt\gip_gabor.h" />
+    <ClInclude Include="src\Girist\giris_core.h" />
+    <ClInclude Include="src\util\2PassScale.h" />
+    <ClInclude Include="src\util\Compact_DataStruc.h" />
+    <ClInclude Include="src\util\Filters.h" />
+    <ClInclude Include="src\util\gip_fv.h" />
+    <ClInclude Include="src\util\gip_imag_property.h" />
+    <ClInclude Include="src\util\gip_imag_transform.h" />
+    <ClInclude Include="src\util\gip_library.h" />
+    <ClInclude Include="src\util\gip_thread.h" />
+    <ClInclude Include="src\util\gip_util.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TabCtrlSSL.h" />
     <ClInclude Include="TabIris.h" />
@@ -156,17 +230,13 @@
     <ResourceCompile Include="Girist.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\Tools\OpenCV\lib\cv.lib" />
-    <Library Include="..\Tools\OpenCV\lib\cxcore.lib" />
-    <Library Include="..\Tools\OpenCV\lib\highgui.lib" />
-    <Library Include="H:\Program Files\Intel\MKL\8.0\ia32\lib\libguide.lib" />
-    <Library Include="H:\Program Files\Intel\MKL\8.0\ia32\lib\mkl_c.lib" />
-    <Library Include="H:\Program Files\Intel\MKL\8.0\ia32\lib\mkl_ia32.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="Girist.vcxproj">
       <Project>{1b877124-0b12-4e49-a44b-78d65f238491}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
